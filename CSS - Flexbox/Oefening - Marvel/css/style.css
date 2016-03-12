@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,100,300,500);
+body {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.title h1 {
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+
+.title h2 {
+    color: #ffeb00;
+    font-family: "Raleway";
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin: 0;
+}
+
+.grid {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 10vh;
+}
+
+.item {
+    width: 23%;
+    height: 250px;
+    background-color: gray;
+    margin: 1%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 999999;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.75);
+    -webkit-transform: scale(1);
+    -webkit-transition: transform 0.1s linear;
+}
+
+.item:hover
+{
+    -webkit-transform: scale(1.05);
+    -webkit-transition: transform 0.1s linear;
+}
+
+.item:hover .overlay
+{
+    opacity: 0.4;
+    -webkit-transition: opacity 0.1s linear;
+}
+
+.content {
+    position: absolute;
+    z-index: 99999999;
+    bottom: 20px;
+    left: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.item:first-child,
+.item:nth-child(2) {
+    width: 48%;
+}
+
+.item:nth-child(7),
+.item:nth-child(8),
+.item:nth-child(9) {
+    width: 31%;
+}
+
+.overlay {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 1)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0);
+     -webkit-transition: opacity 0.1s linear;
+    opacity: 1;
+}
+
+#superman {
+    background-image: url(../images/superman.jpg);
+}
+
+#batman {
+    background-image: url(../images/batman.jpg);
+}
+
+#wolverine {
+    background-image: url(../images/wolverin.jpg);
+}
+
+#hulk {
+    background-image: url(../images/hulk.jpg);
+}
+
+#kick-ass {
+    background-image: url(../images/kickass.jpg);
+}
+
+#ironman {
+    background-image: url(../images/ironman.jpg);
+}
+
+#watchmen {
+    background-image: url(../images/watchmen.jpg);
+}
+
+#captain {
+    background-image: url(../images/capitain-america.jpeg);
+}
+
+#spiderman {
+    background-image: url(../images/spiderman.jpg);
+}
